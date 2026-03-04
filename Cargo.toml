@@ -1,0 +1,9 @@
+[package]
+name = "fanotify_audit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nix = { version = "0.29", features = ["fanotify", "event"] }
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
